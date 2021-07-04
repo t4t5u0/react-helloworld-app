@@ -4,30 +4,30 @@ import './Counter.scss';
 const Counter: React.VFC = () => {
   const [count, setCount] = useState(0);
 
-  type CounterClass = {
-    character: string;
-    function: (count: number) => number;
-    className: string;
-  };
-  type CountersClass = CounterClass[];
+  // type CounterClass = {
+  //   character: string;
+  //   function: (count: number) => number;
+  //   className: string;
+  // };
+  // type CountersClass = CounterClass[];
 
-  const containers: CountersClass = [
-    {
-      character: '+',
-      function: incrementCounter,
-      className: 'Counter-button-inc',
-    },
-    {
-      character: '-',
-      function: decrementCounter,
-      className: 'Counter-button-dec',
-    },
-    {
-      character: 'reset',
-      function: resetCounter,
-      className: 'Counter-button-res',
-    },
-  ];
+  // const containers: CountersClass = [
+  //   {
+  //     character: '+',
+  //     function: incrementCounter,
+  //     className: 'Counter-button-inc',
+  //   },
+  //   {
+  //     character: '-',
+  //     function: decrementCounter,
+  //     className: 'Counter-button-dec',
+  //   },
+  //   {
+  //     character: 'reset',
+  //     function: resetCounter,
+  //     className: 'Counter-button-res',
+  //   },
+  // ];
 
   // const Counters = (containers: CountersClass) => {
   //   const list = containers.map((container: CounterClass) => {
