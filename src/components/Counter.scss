@@ -1,0 +1,44 @@
+$button-color: #f44444;
+$increment-color: #f44444;
+$decrement-color: #4444f4;
+$reset-color: #44f444;
+
+@mixin bg-color($color) {
+  background-color: $color;
+  &:hover {
+    background-color: lighten($color: $color, $amount: 10%);
+  }
+}
+
+.Counters {
+  display: flex;
+  justify-content: center;
+}
+
+.Counter {
+  text-align: center;
+  padding: 10px;
+
+  &-title {
+    color: blue;
+  }
+
+  &-button {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    margin: 0 auto;
+    border-radius: 5%;
+    border: 0px;
+
+    &-inc {
+      @include bg-color($increment-color);
+    }
+    &-dec {
+      @include bg-color($decrement-color);
+    }
+    &-res {
+      @include bg-color($reset-color);
+    }
+  }
+}
