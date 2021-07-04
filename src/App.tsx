@@ -4,7 +4,7 @@ import './App.scss';
 // import './component/Counter';
 import Counter from './components/Counter';
 
-function App() {
+const App: React.VFC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -23,6 +23,6 @@ function App() {
       <Counter />
     </div>
   );
-}
+};
 
 export default App;
