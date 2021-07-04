@@ -16,7 +16,7 @@ const decrementCounter = (count: number) => {
   return count - 1;
 };
 
-const resetCounter = (_: number) => {
+const resetCounter = () => {
   return 0;
 };
 
